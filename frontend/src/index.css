@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom animations using Tailwind layer */
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Optional: Smooth body transition between themes */
+body {
+  @apply  font-sans;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Optional: Utility base styles */
+a {
+  @apply text-blue-600 hover:underline;
+}
