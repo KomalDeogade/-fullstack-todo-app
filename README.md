@@ -12,13 +12,6 @@ A beautifully designed, responsive, and full-featured **Full Stack ToDo App** bu
 
 ---
 
-## 🚀 Live Demo
-
-- 🔗 Frontend: [https://fullstack-todo-app.vercel.app](https://fullstack-todo-app.vercel.app)
-- 🔌 Backend API: [https://todo-backend.onrender.com/api/todos](https://todo-backend.onrender.com/api/todos)
-
----
-
 ## 💡 Key Features
 
 - ✅ Add, view, delete todos
