@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { TextField, Button, Stack } from '@mui/material';
+import { motion } from 'framer-motion'; // Add this import
 
 export default function AddTodo({ onAdd }) {
   const [title, setTitle] = useState('');
@@ -12,7 +13,12 @@ export default function AddTodo({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <motion.form
+      onSubmit={handleSubmit}
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} className="my-4">
         <TextField
           fullWidth
@@ -26,6 +32,6 @@ export default function AddTodo({ onAdd }) {
           Add
         </Button>
       </Stack>
-    </form>
+    </motion.form>
   );
 }
